@@ -1,3 +1,3 @@
 # responsivedesign
 
-Playing around with responsiveness
+Playing around with responsiveness for cross platforms
