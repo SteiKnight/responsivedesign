@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:responsivedesign/responsive/desktop.dart';
+import 'package:responsivedesign/responsive/mobile.dart';
+import 'package:responsivedesign/responsive/responsive_layout.dart';
+import 'package:responsivedesign/responsive/tablet.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +15,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
+      debugShowCheckedModeBanner: false,
+      home: ResponsiveLayout(
+          mobile: Mobile(), tablet: Tablet(), desktop: Desktop()),
     );
   }
 }
-
